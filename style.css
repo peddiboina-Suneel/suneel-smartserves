@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  transition: 0.3s;
+}
+
+/* DARK MODE */
+.dark {
+  background: #111;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.btn {
+  background: orange;
+  padding: 10px;
+  color: white;
+}
+
+/* MENU */
+#menu {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.filters button {
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: #eee;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* REVIEWS */
+#reviews {
+  padding: 50px;
+  text-align: center;
+}
+
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+textarea {
+  width: 250px;
+  height: 80px;
+}
+
+.review-item {
+  background: #eee;
+  padding: 10px;
+  margin: 10px auto;
+  width: 300px;
+  border-radius: 5px;
+}
+
+/* CONTACT */
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Suneel SmartServe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Suneel SmartServe</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#stats">Stats</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="toggleMode">🌙</button>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="overlay">
+    <h2>Delicious Food Experience</h2>
+    <p>Fresh • Tasty • Fast Delivery</p>
+    <a href="https://wa.me/919491953283" class="btn">Order Now</a>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <h2>Our Menu</h2>
+
+  <div class="filters">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('veg')">Veg</button>
+    <button onclick="filterMenu('nonveg')">Non-Veg</button>
+  </div>
+
+  <div class="menu">
+    <div class="card veg">🍛 Veg Biryani ₹150</div>
+    <div class="card nonveg">🍗 Chicken Biryani ₹200</div>
+    <div class="card veg">Paneer Curry ₹180</div>
+    <div class="card nonveg">Chicken Curry ₹220</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <h2>Our Achievements</h2>
+  <div class="stats">
+    <div>🍽️ 5000+ Orders</div>
+    <div>⭐ 4.8 Rating</div>
+    <div>👨‍🍳 10+ Chefs</div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="rating-box">
+    <select id="rating">
+      <option value="5">⭐ 5</option>
+      <option value="4">⭐ 4</option>
+      <option value="3">⭐ 3</option>
+      <option value="2">⭐ 2</option>
+      <option value="1">⭐ 1</option>
+    </select>
+
+    <textarea id="reviewText" placeholder="Write your feedback..."></textarea>
+    <button onclick="addReview()">Submit</button>
+  </div>
+
+  <div id="reviewList"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 9491953283</p>
+  <iframe src="https://maps.google.com/maps?q=hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<footer>
+  <p>© 2026 Suneel SmartServe</p>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919491953283" class="whatsapp">💬</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
